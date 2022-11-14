@@ -4,11 +4,11 @@ Este tutorial se trata de utilizar o módulo venv para a ativação e desativaç
 
 A única diferença da ativação entre os dois ambientes é o comando em si, o linux utiliza o comando source para a ativação, enquanto no windows apenas executamos diretamente o script .bat.
 
-## Ativando venv via linux
+## Ativando o venv
 
 Com o terminal aberto, rode o conjunto de comandos referentes ao que você deseja realizar:
 
-Instalando o módulo do ambiente virtual
+### Instalando o módulo do ambiente virtual
    
    1. Atualize o apt
     ```
@@ -19,35 +19,32 @@ Instalando o módulo do ambiente virtual
     sudo apt install python3.10-venv
     ```
 
-Criando um ambiente virtual
+### Criando um ambiente virtual
 
    1. Navegue até a pasta do projeto no qual você deseja criar um ambiente virtual e dentro dela abra o terminal
    2. Crie o ambiente virtual
-    ```
-    python3 -m venv nome_do_ambiente_virtual
+    ```python3 -m venv nome_do_ambiente_virtual
     ```
 
-Ativando o ambiente virtual
+### Ativando o ambiente virtual
 
-    1. Navegue até a pasta do projeto do qual você deseja ativar o ambiente virtual;
-    2. Ative o ambiente virtual:
+   1. Navegue até a pasta do projeto no qual você deseja criar um ambiente virtual e dentro dela abra o terminal
+   2. Ative o ambiente virtual
+    ```
+    source nome_do_ambiente_virtual/bin/activate
+    ```
+       
+      **OBS**: Caso esteja em um ambiente windows, use o comando abaixo:
+      ```nome_do_ambiente_virtual\Scripts\Activate```
+
+
+### Desativando o ambiente virtual
+
+   1. Navegue até a pasta do projeto do qual você deseja desativar o ambiente virtual
+   2. Desative o ambiente virtual
      ```
-     source nome_do_ambiente_virtual/bin/activate;
+     deactivate
      ```
-    Caso esteja em um ambiente windows, use o comando abaixo:
-    ```
-    nome_do_ambiente_virtual\Scripts\Activate
-    ```
-
-
-Desativando o ambiente virtual
-
-    Navegue até a pasta do projeto do qual você deseja desativar o ambiente virtual;
-    Desative o ambiente virtual: deactivate;
-
-## Ativando venv via windows
-
-
 
 ## Referências
 
