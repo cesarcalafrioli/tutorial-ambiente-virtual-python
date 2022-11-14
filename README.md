@@ -10,7 +10,7 @@ Com o terminal aberto, rode o conjunto de comandos referentes ao que você desej
 
 Instalando o módulo do ambiente virtual
    
-   1. Atualize o apt 
+   1. Atualize o apt
     ```
     sudo apt update
     ```
@@ -34,6 +34,11 @@ Ativando o ambiente virtual
      ```
      source nome_do_ambiente_virtual/bin/activate;
      ```
+    Caso esteja em um ambiente windows, use o comando abaixo:
+    ```
+    nome_do_ambiente_virtual\Scripts\Activate
+    ```
+
 
 Desativando o ambiente virtual
 
@@ -51,3 +56,5 @@ https://www.alura.com.br/artigos/ambientes-virtuais-em-python
 https://www.treinaweb.com.br/blog/criando-ambientes-virtuais-para-projetos-python-com-o-virtualenv
 
 https://docs.python.org/pt-br/3/library/venv.html
+
+
